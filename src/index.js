@@ -244,8 +244,7 @@ export {
   ZoomOutRightAnimation,
   ZoomOutUp, 
   ZoomOutUpAnimation,
-  BaseAnimation, 
-  BaseAnimationAnimation
+  BaseAnimation
 };
 
 export default Animate;
