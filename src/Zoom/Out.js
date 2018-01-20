@@ -2,7 +2,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const ZoomOutAnimation = keyframes`
+export const ZoomOutAnimation = keyframes`
   from {
    opacity: 1;
   }

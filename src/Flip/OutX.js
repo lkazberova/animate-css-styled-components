@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const FlipOutXAnimation = keyframes`
+export const FlipOutXAnimation = keyframes`
   from {
     transform: perspective(400px);
   }

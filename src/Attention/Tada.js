@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const TadaAnimation = keyframes`
+export const TadaAnimation = keyframes`
   from {
     transform: scale3d(1, 1, 1);
   }

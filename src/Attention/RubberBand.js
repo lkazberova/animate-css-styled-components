@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const RubberBandAnimation = keyframes`
+export const RubberBandAnimation = keyframes`
   from {
       transform: scale3d(1, 1, 1);
     }

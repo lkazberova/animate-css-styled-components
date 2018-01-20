@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const jelloAnimation = keyframes`
+export const JelloAnimation = keyframes`
   from, 11.1%, to {
      transform: none;
    }
@@ -36,7 +36,7 @@ const jelloAnimation = keyframes`
 `;
 
 const Jello = styled(BaseAnimation)`
-  animation-name: ${jelloAnimation};
+  animation-name: ${JelloAnimation};
   transform-origin: center;
 `;
 

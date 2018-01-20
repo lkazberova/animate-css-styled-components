@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const WobbleAnimation = keyframes`
+export const WobbleAnimation = keyframes`
   from {
     transform: none;
   }

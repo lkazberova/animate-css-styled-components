@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const SlideOutUpAnimation = keyframes`
+export const SlideOutUpAnimation = keyframes`
   from {
       transform: translate3d(0, 0, 0);
     }

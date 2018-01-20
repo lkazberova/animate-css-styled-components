@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const bounceOutUpAnimation = keyframes`
+export const BounceOutUpAnimation = keyframes`
   20% {
     transform: translate3d(0, -10px, 0);
   }
@@ -18,7 +18,7 @@ const bounceOutUpAnimation = keyframes`
 `;
 
 const BounceOutUp = styled(BaseAnimation)`
-  animation-name: ${bounceOutUpAnimation};
+  animation-name: ${BounceOutUpAnimation};
 `;
 
 export default BounceOutUp;

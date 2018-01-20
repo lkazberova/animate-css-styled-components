@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const HeadShakeAnimation = keyframes`
+export const HeadShakeAnimation = keyframes`
   0% {
      transform: translateX(0);
    }

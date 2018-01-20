@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const bounceInDownAnimation = keyframes`
+export const BounceInDownAnimation = keyframes`
   from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
@@ -30,7 +30,7 @@ const bounceInDownAnimation = keyframes`
 `;
 
 const BounceInDown = styled(BaseAnimation)`
-  animation-name: ${bounceInDownAnimation};
+  animation-name: ${BounceInDownAnimation};
 `;
 
 export default BounceInDown;

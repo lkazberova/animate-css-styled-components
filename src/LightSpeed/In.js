@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const LightSpeedInAnimation = keyframes`
+export const LightSpeedInAnimation = keyframes`
   from {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;

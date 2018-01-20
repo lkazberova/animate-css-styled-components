@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const FlipInXAnimation = keyframes`
+export const FlipInXAnimation = keyframes`
   from {
       transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
       animation-timing-function: ease-in;

@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const ShakeAnimation = keyframes`
+export const ShakeAnimation = keyframes`
   from, to {
    transform: translate3d(0, 0, 0);
   }

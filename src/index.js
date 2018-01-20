@@ -1,174 +1,251 @@
 import BaseAnimation from './BaseAnimation';
-import Flash from './Attention/Flash';
-import HeadShake from './Attention/HeadShake';
-import Jello from './Attention/Jello';
-import Pulse from './Attention/Pulse';
-import RubberBand from './Attention/RubberBand';
-import Shake from './Attention/Shake';
-import Swing from './Attention/Swing';
-import Tada from './Attention/Tada';
-import Wobble from './Attention/Wobble';
+import Flash, {FlashAnimation} from './Attention/Flash';
+import HeadShake, {HeadShakeAnimation} from './Attention/HeadShake';
+import Jello, {JelloAnimation} from './Attention/Jello';
+import Pulse, {PulseAnimation} from './Attention/Pulse';
+import RubberBand, {RubberBandAnimation} from './Attention/RubberBand';
+import Shake, {ShakeAnimation} from './Attention/Shake';
+import Swing, {SwingAnimation} from './Attention/Swing';
+import Tada, {TadaAnimation} from './Attention/Tada';
+import Wobble, {WobbleAnimation} from './Attention/Wobble';
 
-import Bounce from './Bounce';
-import BounceIn from './Bounce/In';
-import BounceInUp from './Bounce/InUp';
-import BounceInDown from './Bounce/InDown';
-import BounceInLeft from './Bounce/InLeft';
-import BounceInRight from './Bounce/InRight';
+import Bounce, {BounceAnimation} from './Bounce';
+import BounceIn, {BounceInAnimation} from './Bounce/In';
+import BounceInUp, {BounceInUpAnimation} from './Bounce/InUp';
+import BounceInDown, {BounceInDownAnimation} from './Bounce/InDown';
+import BounceInLeft, {BounceInLeftAnimation} from './Bounce/InLeft';
+import BounceInRight, {BounceInRightAnimation} from './Bounce/InRight';
 
-import BounceOut from './Bounce/Out';
-import BounceOutDown from './Bounce/OutDown';
-import BounceOutLeft from './Bounce/OutLeft';
-import BounceOutRight from './Bounce/OutRight';
-import BounceOutUp from './Bounce/OutUp';
+import BounceOut, {BounceOutAnimation} from './Bounce/Out';
+import BounceOutDown, {BounceOutDownAnimation} from './Bounce/OutDown';
+import BounceOutLeft, {BounceOutLeftAnimation} from './Bounce/OutLeft';
+import BounceOutRight, {BounceOutRightAnimation} from './Bounce/OutRight';
+import BounceOutUp, {BounceOutUpAnimation} from './Bounce/OutUp';
 
-import FadeIn from './Fade/In';
-import FadeInDown from './Fade/InDown';
-import FadeInDownBig from './Fade/InDownBig';
-import FadeInLeft from './Fade/InLeft';
-import FadeInLeftBig from './Fade/InLeftBig';
-import FadeInRight from './Fade/InRight';
-import FadeInRightBig from './Fade/InRightBig';
-import FadeInUp from './Fade/InUp';
-import FadeInUpBig from './Fade/InUpBig';
+import FadeIn, {FadeInAnimation} from './Fade/In';
+import FadeInDown, {FadeInDownAnimation} from './Fade/InDown';
+import FadeInDownBig, {FadeInDownBigAnimation} from './Fade/InDownBig';
+import FadeInLeft, {FadeInLeftAnimation} from './Fade/InLeft';
+import FadeInLeftBig, {FadeInLeftBigAnimation} from './Fade/InLeftBig';
+import FadeInRight, {FadeInRightAnimation} from './Fade/InRight';
+import FadeInRightBig, {FadeInRightBigAnimation} from './Fade/InRightBig';
+import FadeInUp, {FadeInUpAnimation} from './Fade/InUp';
+import FadeInUpBig, {FadeInUpBigAnimation} from './Fade/InUpBig';
 
-import FadeOut from './Fade/Out';
-import FadeOutDown from './Fade/OutDown';
-import FadeOutDownBig from './Fade/OutDownBig';
-import FadeOutLeft from './Fade/OutLeft';
-import FadeOutLeftBig from './Fade/OutLeftBig';
-import FadeOutRight from './Fade/OutRight';
-import FadeOutRightBig from './Fade/OutRightBig';
-import FadeOutUp from './Fade/OutUp';
-import FadeOutUpBig from './Fade/OutUpBig';
+import FadeOut, {FadeOutAnimation} from './Fade/Out';
+import FadeOutDown, {FadeOutDownAnimation} from './Fade/OutDown';
+import FadeOutDownBig, {FadeOutDownBigAnimation} from './Fade/OutDownBig';
+import FadeOutLeft, {FadeOutLeftAnimation} from './Fade/OutLeft';
+import FadeOutLeftBig, {FadeOutLeftBigAnimation} from './Fade/OutLeftBig';
+import FadeOutRight, {FadeOutRightAnimation} from './Fade/OutRight';
+import FadeOutRightBig, {FadeOutRightBigAnimation} from './Fade/OutRightBig';
+import FadeOutUp, {FadeOutUpAnimation} from './Fade/OutUp';
+import FadeOutUpBig, {FadeOutUpBigAnimation} from './Fade/OutUpBig';
 
-import Flip from './Flip';
-import FlipInX from './Flip/InX';
-import FlipInY from './Flip/InY';
-import FlipOutX from './Flip/OutX';
-import FlipOutY from './Flip/OutY';
+import Flip, {FlipAnimation} from './Flip';
+import FlipInX, {FlipInXAnimation} from './Flip/InX';
+import FlipInY, {FlipInYAnimation} from './Flip/InY';
+import FlipOutX, {FlipOutXAnimation} from './Flip/OutX';
+import FlipOutY, {FlipOutYAnimation} from './Flip/OutY';
 
-import LightSpeedIn from './LightSpeed/In';
-import LightSpeedOut from './LightSpeed/Out';
+import LightSpeedIn, {LightSpeedInAnimation} from './LightSpeed/In';
+import LightSpeedOut, {LightSpeedOutAnimation} from './LightSpeed/Out';
 
-import RotateIn from './Rotate/In';
-import RotateInDownLeft from './Rotate/InDownLeft';
-import RotateInDownRight from './Rotate/InDownRight';
-import RotateInUpLeft from './Rotate/InUpLeft';
-import RotateInUpRight from './Rotate/InUpRight';
+import RotateIn, {RotateInAnimation} from './Rotate/In';
+import RotateInDownLeft, {RotateInDownLeftAnimation} from './Rotate/InDownLeft';
+import RotateInDownRight, {RotateInDownRightAnimation} from './Rotate/InDownRight';
+import RotateInUpLeft, {RotateInUpLeftAnimation} from './Rotate/InUpLeft';
+import RotateInUpRight, {RotateInUpRightAnimation} from './Rotate/InUpRight';
 
-import RotateOut from './Rotate/Out';
-import RotateOutDownLeft from './Rotate/OutDownLeft';
-import RotateOutDownRight from './Rotate/OutDownRight';
-import RotateOutUpLeft from './Rotate/OutUpLeft';
-import RotateOutUpRight from './Rotate/OutUpRight';
+import RotateOut, {RotateOutAnimation} from './Rotate/Out';
+import RotateOutDownLeft, {RotateOutDownLeftAnimation} from './Rotate/OutDownLeft';
+import RotateOutDownRight, {RotateOutDownRightAnimation} from './Rotate/OutDownRight';
+import RotateOutUpLeft, {RotateOutUpLeftAnimation} from './Rotate/OutUpLeft';
+import RotateOutUpRight, {RotateOutUpRightAnimation} from './Rotate/OutUpRight';
 
-import SlideInDown from './Slide/InDown';
-import SlideInLeft from './Slide/InLeft';
-import SlideInRight from './Slide/InRight';
-import SlideInUp from './Slide/InUp';
+import SlideInDown, {SlideInDownAnimation} from './Slide/InDown';
+import SlideInLeft, {SlideInLeftAnimation} from './Slide/InLeft';
+import SlideInRight, {SlideInRightAnimation} from './Slide/InRight';
+import SlideInUp, {SlideInUpAnimation} from './Slide/InUp';
 
-import SlideOutDown from './Slide/OutDown';
-import SlideOutLeft from './Slide/OutLeft';
-import SlideOutRight from './Slide/OutRight';
-import SlideOutUp from './Slide/OutUp';
+import SlideOutDown, {SlideOutDownAnimation} from './Slide/OutDown';
+import SlideOutLeft, {SlideOutLeftAnimation} from './Slide/OutLeft';
+import SlideOutRight, {SlideOutRightAnimation} from './Slide/OutRight';
+import SlideOutUp, {SlideOutUpAnimation} from './Slide/OutUp';
 
-import Hinge from './Especials/Hinge';
-import RollIn from './Especials/RollIn';
-import RollOut from './Especials/RollOut';
+import Hinge, {HingeAnimation} from './Especials/Hinge';
+import RollIn, {RollInAnimation} from './Especials/RollIn';
+import RollOut, {RollOutAnimation} from './Especials/RollOut';
 
-import ZoomIn from './Zoom/In';
-import ZoomInDown from './Zoom/InDown';
-import ZoomInLeft from './Zoom/InLeft';
-import ZoomInRight from './Zoom/InRight';
-import ZoomInUp from './Zoom/InUp';
+import ZoomIn, {ZoomInAnimation} from './Zoom/In';
+import ZoomInDown, {ZoomInDownAnimation} from './Zoom/InDown';
+import ZoomInLeft, {ZoomInLeftAnimation} from './Zoom/InLeft';
+import ZoomInRight, {ZoomInRightAnimation} from './Zoom/InRight';
+import ZoomInUp, {ZoomInUpAnimation} from './Zoom/InUp';
 
-import ZoomOut from './Zoom/Out';
-import ZoomOutDown from './Zoom/OutDown';
-import ZoomOutLeft from './Zoom/OutLeft';
-import ZoomOutRight from './Zoom/OutRight';
-import ZoomOutUp from './Zoom/OutUp';
+import ZoomOut, {ZoomOutAnimation} from './Zoom/Out';
+import ZoomOutDown, {ZoomOutDownAnimation} from './Zoom/OutDown';
+import ZoomOutLeft, {ZoomOutLeftAnimation} from './Zoom/OutLeft';
+import ZoomOutRight, {ZoomOutRightAnimation} from './Zoom/OutRight';
+import ZoomOutUp, {ZoomOutUpAnimation} from './Zoom/OutUp';
 
 import Animate from './Animate';
 
 export {
-  Bounce,
-  Flash,
-  HeadShake,
-  Jello,
-  Pulse,
-  RubberBand,
-  Shake,
-  Swing,
-  Tada,
-  Wobble,
-  BounceIn,
-  BounceInUp,
-  BounceInDown,
-  BounceInLeft,
-  BounceInRight,
-  BounceOut,
-  BounceOutDown,
-  BounceOutLeft,
-  BounceOutRight,
-  BounceOutUp,
-  FadeIn,
-  FadeInDown,
-  FadeInDownBig,
-  FadeInLeft,
-  FadeInLeftBig,
-  FadeInRight,
-  FadeInRightBig,
-  FadeInUp,
-  FadeInUpBig,
-  FadeOut,
-  FadeOutDown,
-  FadeOutDownBig,
-  FadeOutLeft,
-  FadeOutLeftBig,
-  FadeOutRight,
-  FadeOutRightBig,
-  FadeOutUp,
-  FadeOutUpBig,
-  Flip,
-  FlipInX,
-  FlipInY,
-  FlipOutX,
-  FlipOutY,
-  LightSpeedIn,
-  LightSpeedOut,
-  RotateIn,
-  RotateInDownLeft,
-  RotateInDownRight,
-  RotateInUpLeft,
-  RotateInUpRight,
-  RotateOut,
-  RotateOutDownLeft,
-  RotateOutDownRight,
-  RotateOutUpLeft,
-  RotateOutUpRight,
-  SlideInDown,
-  SlideInLeft,
-  SlideInRight,
-  SlideInUp,
-  SlideOutDown,
-  SlideOutLeft,
-  SlideOutRight,
-  SlideOutUp,
-  Hinge,
-  RollIn,
-  RollOut,
-  ZoomIn,
-  ZoomInDown,
-  ZoomInLeft,
-  ZoomInRight,
-  ZoomInUp,
-  ZoomOut,
-  ZoomOutDown,
-  ZoomOutLeft,
-  ZoomOutRight,
-  ZoomOutUp,
-  BaseAnimation
+  Bounce, 
+  BounceAnimation,
+  Flash, 
+  FlashAnimation,
+  HeadShake, 
+  HeadShakeAnimation,
+  Jello, 
+  JelloAnimation,
+  Pulse, 
+  PulseAnimation,
+  RubberBand, 
+  RubberBandAnimation,
+  Shake, 
+  ShakeAnimation,
+  Swing, 
+  SwingAnimation,
+  Tada, 
+  TadaAnimation,
+  Wobble, 
+  WobbleAnimation,
+  BounceIn, 
+  BounceInAnimation,
+  BounceInUp, 
+  BounceInUpAnimation,
+  BounceInDown, 
+  BounceInDownAnimation,
+  BounceInLeft, 
+  BounceInLeftAnimation,
+  BounceInRight, 
+  BounceInRightAnimation,
+  BounceOut, 
+  BounceOutAnimation,
+  BounceOutDown, 
+  BounceOutDownAnimation,
+  BounceOutLeft, 
+  BounceOutLeftAnimation,
+  BounceOutRight, 
+  BounceOutRightAnimation,
+  BounceOutUp, 
+  BounceOutUpAnimation,
+  FadeIn, 
+  FadeInAnimation,
+  FadeInDown, 
+  FadeInDownAnimation,
+  FadeInDownBig, 
+  FadeInDownBigAnimation,
+  FadeInLeft, 
+  FadeInLeftAnimation,
+  FadeInLeftBig, 
+  FadeInLeftBigAnimation,
+  FadeInRight, 
+  FadeInRightAnimation,
+  FadeInRightBig, 
+  FadeInRightBigAnimation,
+  FadeInUp, 
+  FadeInUpAnimation,
+  FadeInUpBig, 
+  FadeInUpBigAnimation,
+  FadeOut, 
+  FadeOutAnimation,
+  FadeOutDown, 
+  FadeOutDownAnimation,
+  FadeOutDownBig, 
+  FadeOutDownBigAnimation,
+  FadeOutLeft, 
+  FadeOutLeftAnimation,
+  FadeOutLeftBig, 
+  FadeOutLeftBigAnimation,
+  FadeOutRight, 
+  FadeOutRightAnimation,
+  FadeOutRightBig, 
+  FadeOutRightBigAnimation,
+  FadeOutUp, 
+  FadeOutUpAnimation,
+  FadeOutUpBig, 
+  FadeOutUpBigAnimation,
+  Flip, 
+  FlipAnimation,
+  FlipInX, 
+  FlipInXAnimation,
+  FlipInY, 
+  FlipInYAnimation,
+  FlipOutX, 
+  FlipOutXAnimation,
+  FlipOutY, 
+  FlipOutYAnimation,
+  LightSpeedIn, 
+  LightSpeedInAnimation,
+  LightSpeedOut, 
+  LightSpeedOutAnimation,
+  RotateIn, 
+  RotateInAnimation,
+  RotateInDownLeft, 
+  RotateInDownLeftAnimation,
+  RotateInDownRight, 
+  RotateInDownRightAnimation,
+  RotateInUpLeft, 
+  RotateInUpLeftAnimation,
+  RotateInUpRight, 
+  RotateInUpRightAnimation,
+  RotateOut, 
+  RotateOutAnimation,
+  RotateOutDownLeft, 
+  RotateOutDownLeftAnimation,
+  RotateOutDownRight, 
+  RotateOutDownRightAnimation,
+  RotateOutUpLeft, 
+  RotateOutUpLeftAnimation,
+  RotateOutUpRight, 
+  RotateOutUpRightAnimation,
+  SlideInDown, 
+  SlideInDownAnimation,
+  SlideInLeft, 
+  SlideInLeftAnimation,
+  SlideInRight, 
+  SlideInRightAnimation,
+  SlideInUp, 
+  SlideInUpAnimation,
+  SlideOutDown, 
+  SlideOutDownAnimation,
+  SlideOutLeft, 
+  SlideOutLeftAnimation,
+  SlideOutRight, 
+  SlideOutRightAnimation,
+  SlideOutUp, 
+  SlideOutUpAnimation,
+  Hinge, 
+  HingeAnimation,
+  RollIn, 
+  RollInAnimation,
+  RollOut, 
+  RollOutAnimation,
+  ZoomIn, 
+  ZoomInAnimation,
+  ZoomInDown, 
+  ZoomInDownAnimation,
+  ZoomInLeft, 
+  ZoomInLeftAnimation,
+  ZoomInRight, 
+  ZoomInRightAnimation,
+  ZoomInUp, 
+  ZoomInUpAnimation,
+  ZoomOut, 
+  ZoomOutAnimation,
+  ZoomOutDown, 
+  ZoomOutDownAnimation,
+  ZoomOutLeft, 
+  ZoomOutLeftAnimation,
+  ZoomOutRight, 
+  ZoomOutRightAnimation,
+  ZoomOutUp, 
+  ZoomOutUpAnimation,
+  BaseAnimation, 
+  BaseAnimationAnimation
 };
 
 export default Animate;

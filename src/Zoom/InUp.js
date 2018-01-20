@@ -2,7 +2,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const ZoomInUpAnimation = keyframes`
+export const ZoomInUpAnimation = keyframes`
   from {
       opacity: 0;
       transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);

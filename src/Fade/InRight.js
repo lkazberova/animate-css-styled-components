@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const FadeInRightAnimation = keyframes`
+export const FadeInRightAnimation = keyframes`
   from {
      opacity: 0;
      transform: translate3d(100%, 0, 0);

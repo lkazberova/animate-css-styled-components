@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const RotateInUpLeftAnimation = keyframes`
+export const RotateInUpLeftAnimation = keyframes`
   from {
       transform-origin: left bottom;
       transform: rotate3d(0, 0, 1, 45deg);

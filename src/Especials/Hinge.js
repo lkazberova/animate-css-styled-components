@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const HingeAnimation = keyframes`
+export const HingeAnimation = keyframes`
   0% {
     transform-origin: top left;
     animation-timing-function: ease-in-out;

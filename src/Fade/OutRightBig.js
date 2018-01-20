@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const FadeOutRightBigAnimation = keyframes`
+export const FadeOutRightBigAnimation = keyframes`
   from {
    opacity: 1;
   }

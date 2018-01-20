@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const SlideInDownAnimation = keyframes`
+export const SlideInDownAnimation = keyframes`
   from {
       transform: translate3d(0, -100%, 0);
       visibility: visible;

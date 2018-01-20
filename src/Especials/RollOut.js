@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const RollOutAnimation = keyframes`
+export const RollOutAnimation = keyframes`
   from {
     opacity: 1;
   }

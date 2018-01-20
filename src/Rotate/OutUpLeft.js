@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const RotateOutUpLeftAnimation = keyframes`
+export const RotateOutUpLeftAnimation = keyframes`
   from {
     transform-origin: left bottom;
     opacity: 1;

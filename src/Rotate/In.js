@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const RotateInAnimation = keyframes`
+export const RotateInAnimation = keyframes`
   from {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, -200deg);

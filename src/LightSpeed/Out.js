@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import BaseAnimation from '../BaseAnimation';
 
-const LightSpeedOutAnimation = keyframes`
+export const LightSpeedOutAnimation = keyframes`
   from {
      opacity: 1;
    }
